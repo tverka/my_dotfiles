@@ -1,0 +1,142 @@
+* {
+	font-family:  "Symbols Nerd Font";
+	
+	font-weight: bold;
+	font-size: 13px;
+	min-height: 0;
+}
+
+window#waybar {
+	background-color: @bg;
+	transition-property: background-color;
+	transition-duration: .5s;
+	border-radius: 5px;
+}
+
+@define-color bg #272a34;
+@define-color fg #f9f9f9;
+@define-color black #23252e;
+@define-color green #2BE491;
+@define-color gr #363749;
+
+#cpu {
+	background: @black;
+	color: @fg;
+	padding: 0 4px 0 4px;
+	margin: 4px 0px 4px 10px;
+	border-radius: 6px 0px 0px 6px;
+	font-size: 14px;
+}
+
+#memory {
+	background: @black;
+	color: @fg;
+	padding: 0 10px 0 10px;
+	margin: 4px 0 4px 0px;
+}
+
+#custom-weather {
+	background: @black;
+	color: @fg;
+	padding: 0 4px 0 4px;
+	margin: 4px 0 4px 0px;
+}
+
+#custom-cmus {
+	background: @black;
+	color: @green;
+	padding: 0;
+	margin: 4px 0 4px 0;
+	border-radius: 0;
+}
+#custom-alacritty {
+	background: @black;
+	color: @fg;
+	padding: 0 4px 0 4px;
+	margin: 4px 0 4px 0;
+}
+#custom-nemo {
+	background: @black;
+	color: @fg;
+	padding: 0 5px 0 10px;
+	margin: 4px 0 4px 0;
+	border-radius: 0px 6px 6px 0px;
+}
+
+
+#workspaces {
+	background-color: @black;
+	margin: 4px 5px 4px 5px;
+	border-radius: 6px;
+}
+#workspaces button {
+	background-color: @black;
+	color: @fg;	
+	padding: 0 4px;
+	margin: 2px 5px 0 5px;
+	border-bottom: solid 2px #23252e;
+	border-radius: 0;
+}
+#workspaces button:hover {
+	background-color: @black;
+	color: @fg;	
+	padding: 0 4px;
+	margin: 2px 5px 0 5px;
+	border-bottom: solid 2px @fg;
+	border-radius: 0;
+}
+#workspaces button.active {
+	background-color: @black;
+	color: @green;
+	padding: 0 4px;
+	margin: 2px 5px 0 5px;
+	border-bottom: solid 2px;
+	border-radius: 0;
+}
+#workspaces button.empty {
+	color: @gr;
+	padding: 0 4px;
+	margin: 2px 5px 0 5px;
+	border-bottom: solid 2px #23252e;
+	border-radius: 0;
+}
+
+
+#tray {
+	background: @black;
+	color: @fg;
+	padding: 0 15px 0 15px;
+	margin: 4px 0 4px 0;
+	border-radius: 6px 0px 0px 6px;
+}
+#pulseaudio {
+	background: @black;
+	color: @fg;
+	padding: 0px 10px 0px 10px;
+	margin: 4px 0px 4px 0;
+}
+
+#language {
+	background: @black;
+	color: @green;
+	padding: 0px 10px 0px 10px;
+	margin: 4px 0 4px 0;
+	border-bottom: solid 2px @green;
+	border-radius: 0;
+}
+
+#clock {
+	background: @black;
+	color: @fg;
+	padding: 0 4px 0 4px;
+	margin: 4px 10px 4px 0;
+	border-radius: 0px 6px 6px 0px;
+	font-size: 14px;
+}
+
+#battery {
+	background: @black;
+	color: @fg;
+	padding: 0px 10px 0px 10px;
+	margin: 4px 0px 4px 0;	
+}
