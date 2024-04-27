@@ -1,0 +1,3 @@
+2024-04-27 01:26:41.149 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/saifus/.config/hypr/themes/hypr_strws/waybar","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-04-27 01:26:42.292 [info] Started local extension host with pid 7406.
+2024-04-27 01:26:45.620 [info] [perf] Render performance baseline is 103ms

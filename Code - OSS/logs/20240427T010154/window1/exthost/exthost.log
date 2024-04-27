@@ -1,0 +1,10 @@
+2024-04-27 01:01:57.784 [info] Extension host with pid 1654 started
+2024-04-27 01:01:57.785 [info] Skipping acquiring lock for /home/saifus/.config/Code - OSS/User/workspaceStorage/9bdf2b0ceb7db769cae2864a0c79238e.
+2024-04-27 01:01:58.077 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-04-27 01:01:58.441 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-04-27 01:01:58.526 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-04-27 01:01:58.575 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-04-27 01:01:58.677 [info] Eager extensions activated
+2024-04-27 01:01:58.739 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-04-27 01:01:58.745 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-04-27 01:01:58.759 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'

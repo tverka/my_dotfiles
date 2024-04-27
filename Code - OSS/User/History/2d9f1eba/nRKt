@@ -1,0 +1,139 @@
+{
+	"position": "bottom",
+	"height": 27,
+	"width": 1300,
+	"spacing": 0,
+	"margin-bottom": 5,
+
+    "modules-left": ["temperature", "cpu", "memory", "custom/weather", "custom/cmus", "custom/alacritty", "custom/nemo"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["tray", "backlight", "pulseaudio", "hyprland/language", "battery", "clock"],
+	
+	"temperature": {
+		"format": " {temperatureC}°C",
+		"tooltip": false
+	},
+
+	"cpu": {
+		"format": "  {usage}%",
+		"tooltip": false,
+		"interval": 0.01,
+    },
+
+    "memory": {
+    	"format": "  {}%",
+    	"tooltip": false,
+		"interval": 0.01
+    },
+	
+	"custom/weather": {
+		"format": "󰖞 {}",
+		"interval": 30,
+		"exec": "~/.config/hypr/themes/hypr_strws/weather.sh",
+		"tooltip": false
+	},
+
+	"custom/cmus": {
+	"format": "{icon} CMUS",
+	"format-icons": {
+		"default": [""]
+		},
+		"max-length": 15,
+		"interval": 1,
+		"exec": "cmus-remote -C \"format_print '%F'\"",
+		"exec-if": "pgrep cmus",
+		"on-click": "cmus-remote -u",
+		"on-scroll-up": "cmus-remote --next",
+		"on-scroll-down": "cmus-remote --prev",
+		"escape": true,
+		"tooltip": false
+	},
+
+	"custom/alacritty": {
+		"format": "",
+		"on-click": "exec alacritty --config-file ~/.config/alacritty/alacritty.toml",
+		"tooltip": false
+	},
+
+	"custom/nemo": {
+		"format": "󰉋",
+		"on-click": "exec nemo",
+		"tooltip": false
+	},
+
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"1": "󰫍",
+			"2": "󰫍",
+			"3": "󰫍",
+			"4": "󰫍",
+			"5": "󰫍",
+			"6": "󰫍"
+			},
+		"tooltip": false,
+        "persistent-workspaces": {
+                "*": 6
+            }
+	},
+
+    "tray": {
+		"icon-size": 14,
+		"spacing": 15
+    },
+
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+	},
+
+    "pulseaudio": {
+		"scroll-step": 1,
+		"format": "{icon}{volume}%",
+		"format-icons": ["", "", ""],
+		"on-click": "pavucontrol"
+	},
+
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "EN",
+		"format-ru": "RU"
+	},
+
+	"battery": {
+		/*"format": "{capacity}% {icon}",
+		"format-icons": ["", "", "", "", ""],
+		"format-charging": " {capacity}%",
+		"interval": 30,
+		"states": {
+				"warning": 25,
+			"critical": 10
+		},
+		"tooltip": false */
+		"states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+	},
+    
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+
+	"escape": true,
+	"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+}
+

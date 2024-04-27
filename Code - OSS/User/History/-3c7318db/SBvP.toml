@@ -1,0 +1,23 @@
+# [target.x86_64-pc-windows-msvc]
+# # rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+# linker = "rust-lld"
+
+# [target.x86_64-pc-windows-gnu]
+# linker = "rust-lld"
+# # rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
+# [target.thumbv7em-none-eabihf]
+# runner = 'arm-none-eabi-gdb'
+# rustflags = [
+#   # LLD (shipped with the Rust toolchain) is used as the default linker
+#   "-C", "link-arg=-Tlink.x",
+# ]
+
+[target.x86_64-unknown-linux-gnu]
+# rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+# linker = "rust-lld"
+
+
+[build]
+# target = "x86_64-unknown-linux-gnu"
+target = "x86_64-pc-windows-gnu"
